@@ -21,7 +21,7 @@ class Article(models.Model):
     """ Модель для Объявлений """
 
     title = models.CharField(max_length=150, unique=False, verbose_name='Название')
-    categoryId = models.ForeignKey(Category,  on_delete=models.CASCADE, blank=True, related_name='articles')
+    categoryId = models.ForeignKey(Category,  on_delete=models.CASCADE, blank=True, related_name='articles', verbose_name='Категория')
     description = models.CharField(max_length=150, unique=False, verbose_name='Описание')
     target = models.PositiveIntegerField(verbose_name='Нужная сумма')
     progress = models.PositiveIntegerField(verbose_name='Собранные средства')
@@ -32,6 +32,7 @@ class Article(models.Model):
     creation_date = models.DateField(verbose_name='Дата создания')
     end_date = models.DateField(verbose_name='Дата окончания')
     requisites = models.CharField(max_length=255, verbose_name='Реквизиты')
+    is_active = models.BooleanField(verbose_name='Одобрено', default=False)
 
     def __str__(self):
         return self.title
@@ -47,7 +48,4 @@ class Image(models.Model):
     image = models.ImageField(verbose_name='Фотография', null=True, blank=True)
 
 
-# class Requisites(models.Model):
-#     articleId = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='article_requisites')
-#     requisites = models.CharField(max_length=40, verbose_name='Реквизиты', null=True, blank=True)
 
