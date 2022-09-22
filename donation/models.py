@@ -21,7 +21,7 @@ class Article(models.Model):
     """ Модель для Объявлений """
 
     title = models.CharField(max_length=150, unique=False, verbose_name='Название')
-    categoryId = models.ForeignKey(Category,  on_delete=models.CASCADE, blank=True, related_name='articles', verbose_name='Категория')
+    categoryId = models.ForeignKey(Category,  on_delete=models.CASCADE, blank=True, related_name='donation', verbose_name='Категория')
     description = models.CharField(max_length=150, unique=False, verbose_name='Описание')
     target = models.PositiveIntegerField(verbose_name='Нужная сумма')
     progress = models.PositiveIntegerField(verbose_name='Собранные средства')
