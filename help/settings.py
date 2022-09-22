@@ -32,7 +32,7 @@ INSTALLED_APPS = [
     # 'django.contrib.staticfiles',  # required for serving swagger ui's css/js files
     'drf_yasg',
     # apps
-    'articles',
+    'donation',
 ]
 
 MIDDLEWARE = [
