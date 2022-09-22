@@ -6,19 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="624ce9c5-de9b-4f39-bf72-6653b48e75c3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/migrations/0002_article_is_active_alter_article_categoryid.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/migrations/0002_article_is_active_alter_article_categoryid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/help/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/help/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/help/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/help/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/donation/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/donation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/donation/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/donation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/donation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
