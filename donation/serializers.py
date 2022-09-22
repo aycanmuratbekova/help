@@ -8,9 +8,9 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class ArticleSerializer(serializers.ModelSerializer):
+class DonationSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Article
+        model = Donation
         fields = "__all__"
 
 

@@ -16,7 +16,7 @@ class Category(models.Model):
         return self.name
 
 
-class Article(models.Model):
+class Donation(models.Model):
 
     """ Модель для Объявлений """
 
@@ -44,7 +44,7 @@ class Article(models.Model):
 
 
 class Image(models.Model):
-    articleId = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='article_images')
+    articleId = models.ForeignKey(Donation, on_delete=models.CASCADE, related_name='article_images')
     image = models.ImageField(verbose_name='Фотография', null=True, blank=True)
 
 

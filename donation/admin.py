@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Article, Image
+from .models import Category, Donation, Image
 # from models import Callback, Collection, Image, Product, Cart, Order, CartItem
 
 
@@ -15,7 +15,7 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display = ('name', 'description', 'image')
 
 
-@admin.register(Article)
+@admin.register(Donation)
 class ArticleAdmin(admin.ModelAdmin):
     inlines = [ImageInline, ]
     list_display = ('title', 'categoryId', 'description', 'target', 'progress', 'charityQty', 'city', 'owner',
