@@ -6,6 +6,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('categories/', CategoryAPIView.as_view()),
-    path('articles/<int:category_id>', ArticleAPIView.as_view()),
+    path('donation/<int:category_id>', ArticleAPIView.as_view()),
     # path('')
 ]

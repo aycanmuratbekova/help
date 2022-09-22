@@ -53,12 +53,12 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('image', models.ImageField(blank=True, null=True, upload_to='', verbose_name='Фотография')),
-                ('articleId', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='article_images', to='articles.article')),
+                ('articleId', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='article_images', to='donation.article')),
             ],
         ),
         migrations.AddField(
             model_name='article',
             name='categoryId',
-            field=models.ForeignKey(blank=True, on_delete=django.db.models.deletion.CASCADE, related_name='articles', to='articles.category'),
+            field=models.ForeignKey(blank=True, on_delete=django.db.models.deletion.CASCADE, related_name='donation', to='donation.category'),
         ),
     ]
