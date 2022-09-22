@@ -14,14 +14,12 @@ class CategoryAPIView(generics.ListAPIView):
     queryset = Category.objects.all()
 
 
-class DonationAPIView(generics.ListAPIView):
-
+class DonationViewSet(viewsets.ModelViewSet):
     serializer_class = DonationSerializer
+    queryset = Donation.objects.all()
 
-    def get(self, category_id, **kwargs):
-        queryset = Donation.objects.filter(id=category_id)
-        serializer = DonationSerializer(queryset, many=True)
-        return Response(serializer.data)
+
+
 
 
 

@@ -1,8 +1,10 @@
 pillow
+django
 django-nested-admin
 psycopg2-binary
 django-jazzmin
 djangorestframework
 django-phonenumber-field
 phonenumbers
-
+drf-yasg-json-api
+drf-yasg
