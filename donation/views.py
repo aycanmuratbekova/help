@@ -1,12 +1,14 @@
 # import APIView as APIView
 from rest_framework import generics
+from rest_framework import status, filters
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .serializers import CategorySerializer, DonationSerializer
-from .models import Donation, Category
+from .serializers import CategorySerializer, DonationSerializer, CitySerializer
+from .models import Donation, Category, City
 from rest_framework.decorators import api_view
-from rest_framework import viewsets
+from rest_framework import viewsets, mixins
+from django_filters.rest_framework import DjangoFilterBackend
 
 
 class CategoryAPIView(generics.ListAPIView):
@@ -14,14 +16,30 @@ class CategoryAPIView(generics.ListAPIView):
     queryset = Category.objects.all()
 
 
-class DonationAPIView(generics.ListAPIView):
+class CategoryDetail(generics.RetrieveAPIView):
+    serializer_class = CategorySerializer
+    queryset = Category.objects.all()
 
+
+class DonationAPIView(generics.ListCreateAPIView):
+    queryset = Donation.objects.all()
+    serializer_class = DonationSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['categoryId', 'city']
+
+
+class DonationDetail(generics.RetrieveAPIView):
+    queryset = Donation.objects.all()
     serializer_class = DonationSerializer
 
-    def get(self, category_id, **kwargs):
-        queryset = Donation.objects.filter(id=category_id)
-        serializer = DonationSerializer(queryset, many=True)
-        return Response(serializer.data)
+
+class CityListAPIView(generics.ListAPIView):
+    serializer_class = CitySerializer
+    queryset = City.objects.all()
+
+
+
+
 
 
 
