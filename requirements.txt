@@ -6,5 +6,5 @@ django-jazzmin
 djangorestframework
 django-phonenumber-field
 phonenumbers
-drf-yasg-json-api
 drf-yasg
+drf-yasg-json-api

@@ -1,10 +1,17 @@
 from django.contrib import admin
-from .models import Category, Donation, Image
+from .models import Category, Donation, DonationImage, City, CategoryImage
 # from models import Callback, Collection, Image, Product, Cart, Order, CartItem
 
 
 class ImageInline(admin.TabularInline):
-    model = Image
+    model = DonationImage
+    max_num = 12
+    min_num = 1
+    extra = 0
+
+
+class CategoryImageInline(admin.TabularInline):
+    model = CategoryImage
     max_num = 12
     min_num = 1
     extra = 0
@@ -12,12 +19,18 @@ class ImageInline(admin.TabularInline):
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('name', 'description', 'image')
+    inlines = [CategoryImageInline, ]
+    list_display = ('name', 'description')
 
 
 @admin.register(Donation)
-class ArticleAdmin(admin.ModelAdmin):
+class DonationAdmin(admin.ModelAdmin):
     inlines = [ImageInline, ]
     list_display = ('title', 'categoryId', 'description', 'target', 'progress', 'charityQty', 'city', 'owner',
                     'phone_number', 'creation_date', 'end_date', 'requisites')
+
+
+@admin.register(City)
+class CityAdmin(admin.ModelAdmin):
+    list_display = ['title', ]
 
