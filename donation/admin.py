@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Donation, DonationImage, City, CategoryImage
+from .models import Category, Donation, DonationImage, City, CategoryImage, Appeal
 # from models import Callback, Collection, Image, Product, Cart, Order, CartItem
 
 
@@ -34,3 +34,7 @@ class DonationAdmin(admin.ModelAdmin):
 class CityAdmin(admin.ModelAdmin):
     list_display = ['title', ]
 
+
+@admin.register(Appeal)
+class AppealAdmin(admin.ModelAdmin):
+    list_display = ['phone_number', 'description', 'date']

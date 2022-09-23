@@ -4,8 +4,8 @@ from rest_framework import status, filters
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .serializers import CategorySerializer, DonationSerializer, CitySerializer
-from .models import Donation, Category, City
+from .serializers import CategorySerializer, DonationSerializer, CitySerializer, AppealSerializer
+from .models import Donation, Category, City, Appeal
 from rest_framework.decorators import api_view
 from rest_framework import viewsets, mixins
 from django_filters.rest_framework import DjangoFilterBackend
@@ -38,8 +38,9 @@ class CityListAPIView(generics.ListAPIView):
     queryset = City.objects.all()
 
 
-
-
+class AppealListAPIView(generics.ListCreateAPIView):
+    serializer_class = AppealSerializer
+    queryset = Appeal.objects.all()
 
 
 

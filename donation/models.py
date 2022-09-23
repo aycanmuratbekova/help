@@ -55,11 +55,21 @@ class Donation(models.Model):
 
 
 class DonationImage(models.Model):
-    articleId = models.ForeignKey(Donation, on_delete=models.CASCADE, related_name='article_images')
+    articleId = models.ForeignKey(Donation, on_delete=models.CASCADE, related_name='article_images',)
     image = models.ImageField(verbose_name='Фотография', null=True, blank=True)
 
 
 class CategoryImage(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='images')
     image = models.ImageField(verbose_name='Фотография', null=True, blank=True)
+
+
+class Appeal(models.Model):
+    phone_number = PhoneNumberField(blank=True, null=False, verbose_name="Tелефон")
+    description = models.TextField(blank=True, verbose_name='Содержание')
+    date = models.DateTimeField(auto_now_add=True, verbose_name='Дата обращения')
+
+    class Meta:
+        verbose_name = 'Обращение'
+        verbose_name_plural = verbose_name
 

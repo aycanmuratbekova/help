@@ -8,3 +8,5 @@ django-phonenumber-field
 phonenumbers
 drf-yasg
 drf-yasg-json-api
+xmltodict
+django-cors-headers
