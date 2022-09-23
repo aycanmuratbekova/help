@@ -9,5 +9,5 @@ urlpatterns = [
     path('categories/', CategoryAPIView.as_view()),
     path('categories/<int:pk>', CategoryDetail.as_view()),
     path('donation/', DonationAPIView.as_view()),
-    path('donation/<int:pk>', DonationDetail.as_view()),
+    path('donations/<int:pk>', DonationDetail.as_view()),
 ]

@@ -44,7 +44,6 @@ class Donation(models.Model):
     requisites = models.CharField(max_length=255, verbose_name='Реквизиты')
     is_active = models.BooleanField(verbose_name='Одобрено', default=False)
 
-
     def __str__(self):
         return self.title
 
