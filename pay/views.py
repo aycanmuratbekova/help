@@ -30,7 +30,31 @@ class TransactionView(generics.ListCreateAPIView):
         )
         params['pg_sig'] = get_sig(params)
         r = requests.post('https://api.paybox.money/init_payment.php', params=params)
+        print(r)
         payload = xmltodict.parse(r.content).get('response', {})
         if payload.get('pg_status') != 'ok':
             raise NotAcceptable
         return Response({"url": payload.get('pg_redirect_url')})
+
+
+class TransactionStatusView(generics.ListAPIView):
+
+    def ipn(request):
+        from Paybox import Transaction
+
+        # Your order object
+        order = get_object_or_404(Order, reference=request.GET.get('RE'))
+
+        transaction = Transaction()
+        notification = transaction.verify_notification(response_url=request.get_full_path(), order_total=order.total)
+
+        order.payment = notification['success']  # Boolean
+        order.payment_status = notification['status']  # Paybox Status Message
+        order.payment_auth_code = notification['auth_code']  # Authorization Code returned by Payment Center
+        order.save()
+
+        # Paybox Requires a blank 200 response
+        return HttpResponse('')
+
+
+
