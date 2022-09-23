@@ -10,8 +10,4 @@ urlpatterns = [
     path('categories/<int:pk>', CategoryDetail.as_view()),
     path('donation/', DonationAPIView.as_view()),
     path('donation/<int:pk>', DonationDetail.as_view()),
-
-    # path('donation/<int:cityID>', DonationViewSet.as_view({'get': 'list'}), name='take_by_city'),
-    # path('donation/<int:categoryID>/list', DonationViewSet.as_view({'get': 'list'})),
-    # path('')
 ]

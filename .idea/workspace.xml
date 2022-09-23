@@ -5,19 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="624ce9c5-de9b-4f39-bf72-6653b48e75c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pay/get_signature.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/donation/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/donation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/donation/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25a30b827ee690929ebc783d5f7f0d8b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4559.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4e48e13dc34443fe988986ef02f9ac7c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4e48e13dc34443fe988986ef02f9ac7c_gW2XFyC.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/donation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/donation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/help/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/help/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/help/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/help/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
