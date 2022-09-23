@@ -24,4 +24,5 @@ urlpatterns = [
     path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('api-auth/', include('rest_framework.urls')),
     path('api/v1/', include('donation.urls')),
+    path('api/v1/', include('pay.urls')),
 ]
