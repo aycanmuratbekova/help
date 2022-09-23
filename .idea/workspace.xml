@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="624ce9c5-de9b-4f39-bf72-6653b48e75c3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/donation/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/donation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/donation/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/donation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/donation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/donation/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/help/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/help/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +34,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "/home/azatuuluaman/help"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,5 +52,16 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
